@@ -32,7 +32,7 @@ export default function Home() {
           <input className={style.input} type="password" placeholder="contraseña" />
           <br />
           <div className={style.buttonsContainer}>
-            <Button theme='buttonPrimary' click={next}>Registrate</Button>
+            <Button theme='Primary' click={next}>Registrate</Button>
           </div>
           <br />
           <div className={style.linkContainer} ><Link href="/SignUp" legacyBehavior><a className={style.link}>Olvidaste tu Contraseña</a></Link></div>
