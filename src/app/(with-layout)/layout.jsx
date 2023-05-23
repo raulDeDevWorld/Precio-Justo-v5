@@ -41,7 +41,7 @@ className="self-center text-blue-600 text-2xl font-semibold whitespace-nowrap
   </div>
 </nav>
 
-          <main classNameName={style.main}>
+          <main className="p-10 bg-gray-200">
                 {children}
             </main>
 </div>

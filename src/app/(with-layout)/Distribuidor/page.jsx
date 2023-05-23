@@ -57,12 +57,12 @@ export default function Home() {
     return (
 
 
-        <main className={style.main}>
+
             <form >
                 <h3>Agregar Perfil</h3>
-                <div className={style.perfil}>
-                    <Label htmlFor="file" >Subir Imagen</Label>
-                    <input id='file' type="file" />
+                <div className="w-full flex justify-center">
+                    <label htmlFor="file" className="block flex justify-center items-center w-[100px] h-[100px] bg-white border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 rounded-[100px]" >Subir Imagen</label>
+                    <input className="hidden" id='file' type="file" />
                 </div>
 
                 <div class="grid gap-6 mb-6 md:grid-cols-2">
@@ -109,8 +109,9 @@ export default function Home() {
 
                     <div>
                         <Label htmlFor="">Horarios de Atención</Label>
-                        <div className={style.box}>
+                        <div className='w-full flex justify-between'>
                             <Input type="time" name={'timeInit'} onChange={onChangeHandler} />
+                            <span className='w-6/12 flex justify-center items-center'>a</span>
                             <Input type="time" name={'timeFinish'} onChange={onChangeHandler} />
                         </div>
                     </div>
@@ -121,12 +122,12 @@ export default function Home() {
                     </div>
 
                     <div>
-                        <div className={style.box}>
-                            <div>
+                        <div className='w-full flex justify-between'>
+                            <div className='w-5/12'>
                                 <Label htmlFor="">Fecha</Label>
                                 <Input reference={inputRefDate} name="Fecha" styled={{ textAlign: 'center' }} onChange={onChangeHandler} />
                             </div>
-                            <div>
+                            <div className='w-5/12'>
                                 <Label htmlFor="">CVC</Label>
                                 <Input reference={inputRefCVC} name="CVC" styled={{ textAlign: 'center' }} onChange={onChangeHandler} />
                             </div>
@@ -148,7 +149,7 @@ export default function Home() {
                     <Button theme='Primary' click={save}>Guardar</Button>
                 </div>
             </form>
-        </main>
+
 
 
     )
